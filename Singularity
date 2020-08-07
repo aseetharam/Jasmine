@@ -1,8 +1,8 @@
 Bootstrap: docker
-From: adoptopenjdk/openjdk11
+From: oracle/jdk:11
 
 %post
-    apt update && apt-get install -qq -y git wget zlib1g-dev g++ cmake && apt clean
+    yum -y install git wget zlib1g-dev gcc gcc-c++ cmake && yum clean all
     git clone https://github.com/mkirsche/Jasmine.git /usr/local/src/jasmine
     cd /usr/local/src/jasmine
     ./build.sh
