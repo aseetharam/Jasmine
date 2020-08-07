@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: oracle/jdk:11
+From: store/oracle/jdk:11
 
 %post
     yum -y install git wget zlib1g-dev gcc gcc-c++ cmake && yum clean all
