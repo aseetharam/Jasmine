@@ -9,9 +9,8 @@ From: adoptopenjdk/openjdk11
     ./build_jar.sh
 
 %environment
-JASMINE_INSTALL_DIR=/usr/local/src/jasmine
-version=1.02
-
+    JASMINE_INSTALL_DIR=/usr/local/src/jasmine
+    version=1.02
 
 %runscript 
     cd /usr/local/src/jasmine
